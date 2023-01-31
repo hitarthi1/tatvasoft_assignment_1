@@ -11,118 +11,278 @@
 </head>
 
 <body>
-
-
-    <div class="container" style="">
-
-
-   
-
-
-   
-
-
-       
-
-        <div class="content" style="width: 75%; float: right;">
-
-
-            <h1 style="font-weight: bold; margin: 40px auto auto 48px;">Analysis</h1>
-            <form style="font-weight: bold; margin: 40px auto auto 48px;">
-
-
-
-                <div class="form-group">
-                  <label for="exampleInputEmail1">One Column</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-                </div>
-
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Dropdown 
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-                <label for="exampleInputEmail1">Two Column</label>
-                <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                  </div>
-                
-                  <label for="exampleInputEmail1">Three Column</label>
-                  <div class="row">
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="First name">
-                      </div>
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name">
-                      </div>
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name">
-                      </div>
-                 </div>
-
-
-                 <label for="exampleInputEmail1">Four Column</label>
-
-                 <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name">
-                      </div>
-               </div>
+  <div class="dashboard-container">
+    <Header>
+        <div class="flex-left">
+            <img src="images/images/menu-bar.svg" alt="menu bar">
+            <picture class="picture">
+                <source media="(max-width:600px)" srcset="images/images/mobile-header-logo.svg" />
+                <img src="images/images/logo.svg" alt="Logo" class="logo" />
+              </picture>
+        </div>
+        <div class="flex-right">
+            <div class="search_">
+            <img src="images/images/search-icon.svg" class="search">
+            <input type="text" placeholder="Search" class="search-txt">
+            </div>
+            <div class="right-panel">
+            <img src="images/images/notification-icon.svg">
+            <img src="images/images/profile.png" class="profile">
+            <span class="profile-text">John Doe</span>
+            <img src="images/images/downward-arrow.svg" class="arrow">
+            </div>
+        </div>
+    </Header>
+    <section class="main">
+      
+      <div class="side-bar">
+        <div class="side-bar-item item-1">
+            <img src="images/images/dashboard-active.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text" style="color: #C8242F;">Dashboard</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/graph-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Analysis</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/inbox-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Inbox</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/clock-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">History</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/user-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">User</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/maintenance-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Maintenance</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/setting-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Setting</span>
+        </div>
+    </div>
 
 
 
 
-
-            </form>
-
-
-
-
-            
-
-
-
-
-
-
-
-
+     <div class="analysis">
+    <div class="analysis_heading"> Analysis</div>
+    <div class="analysis_div">
+      <!--  -->
+      <div class="main-form">
+        <!-- One Column -->
+        <div class="col-box">
+          <span class="col_text">One Column</span>
+          <div class="transform"></div>
+            <input class="txt-control" type="text" id="name"  placeholder="Name">
+           
+          </div>
+          <div class="transform">
+            <select class="dropdown-control" style="margin-top: 21px;">
+              <option>Dropdown</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+          <div class="transform">
+            <textarea id="multiline" class="multiline-control" rows="4" required></textarea>
+            <label for="multiline">Multiple line</label>
+          </div>
         </div>
 
+        <!-- Two column -->
+        <div class="col-box">
+          <span class="col_text">Two Column</span>
+          <div class="flex_row"> 
+            <div class="flex_col">
+              <div class="transform">
+                <input class="txt-control" type="text" id="Name" required>
+                <label for="Name">Name</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="transform">
+                <input class="txt-control" type="text" id="Username" required>
+                <label for="Username">Username</label>
+              </div>
+            </div>
+          </div>
+          <div class="flex_row" style="margin-top: 21px">
+            <div class="flex_col">
+              <div class="transform">
+                <input class="txt-control" type="password" id="Password" required>
+                <label for="Password">Password</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="transform">
+                <select class="dropdown-control">
+                  <option>Dropdown</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Three Column -->
+        <div class="col-box">
+          <span class="col_text">Three Column</span>
+          <div class="flex_row">
+            <div class="flex_col3">
+              <div class="transform">
+                <input class="txt-control" type="text" id="Focus" required>
+                <label for="focus">Focus</label>
+              </div>
+            </div>
+            <div class="flex_col3">
+              <div class="transform">
+                <input class="txt-control" type="password" id="Password" required>
+                <label for="pass1">Password</label>
+              </div>
+            </div>
+            <div class="flex_col3">
+              <div class="transform">
+                <input class="disable-control" type="text" id="Disable" name="disable" value="JohnDoe" disabled>
+                <label for="disable">Disabled</label>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Four Column -->
+        <div class="col-box">
+          <span class="col_text">Four Column</span>
+          <div class="flex_row">
+            <div class="flex_col4">
+              <div class="transform">
+                <input class="validate-control" type="text" id="designation" name="designation" value="UI Designer"
+                  required>
+                <label for="designation">Designation</label>
+                <span>Enter Valid data</span>
+              </div>
+            </div>
+            <div class="flex_col4">
+              <div class="transform">
+                <input class="info-control" type="text" id="name" required>
+                <label for="name">Name</label>
+                <span>Enter your full Name as per ID</span>
+              </div>
+            </div>
+            <div class="flex_col4">
+              <div class="transform">
+                <input class="txt-control" type="text" id="uname" name="uname" required value="JohnDoe">
+                <label for="uname">Username</label>
+              </div>
+            </div>
+            <div class="flex_col4">
+              <div class="transform">
+                <select class="dropdown-control">
+                  <option>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Other Design elements -->
+        <div class="col-box">
+          <div class="col_text" style="margin-bottom: 21px;">
+            Other Design Elements
+          </div>
+          <div class="inner-head-text">
+            File Upload
+          </div>
+          <div class="transform">
+            <input type="file">
+            <button class="btn-upload"><img src="images/images/cloud-upload-icon.svg" alt="Upload"> <span
+                class="upload-text">Upload</span></button>
+            <span>No item Selected</span>
+          </div>
+          <div class="inner-head-text" style="margin-top: 36px; margin-bottom: 10px;">
 
+            Radio Button
+          </div>
+          <div class="radiobutton">
+            <div class="opt"><input type="radio" name="option1" id="option1" /><span class="opt-name">Option
+                1</span></div>
+            <div class="opt"><input type="radio" name="option1" id="option2" /><span class="opt-name">Option
+                2</span></div>
+          </div>
+          <div class="inner-head-text" style="margin-top: 32px;">Checkbox</div>
+          <div class="check-box">
+            <div class="check"><input type="checkbox" name="check" id="checkbox1" checked disabled /><span
+                class="check-name">Option 1</span></div>
+            <div class="check"><input type="checkbox" name="check" id="checkbox1" /><span class="check-name">Option
+                1</span></div>
+          </div>
+
+          <div class="inner-head-text" style="margin-top: 35px;">
+            Snackbar
+          </div>
+
+          <div class="flex_row">
+            <div class="flex_col">
+              <div class="snackbar error" style="display: flex;">
+                <img src="images/images/error-icon.svg">
+                This is an error Message
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="snackbar info">
+               <div style="display: flex;"> <img src="images/images/info-icon.svg">
+                <div style="display: inline;">  This is an information message!</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex_row" style="margin-top: 25px;">
+            <div class="flex_col">
+              <div class="snackbar warning" style="display: flex;">
+                <img src="images/images/warning-icon.svg">
+                  This is a warning message!
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="snackbar success" style="display: flex;">
+                <img src="images/images/success-icon.svg">
+                This is a success message!
+              </div>
+            </div>
+          </div>
+          <div class="inner-head-text" style="margin-top: 35px;">
+            Call to action
+          </div>
+          <div class="btn-box">
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+          </div>
+
+          <div class="inner-head-text" style="margin-top: 35px;">
+            Tabs
+          </div>
+          <div 
+           class="tabs">
+           <div class="tab-item active"><a class="tab-link">Tab 1</a></div>
+           <div class="tab-item"><a class="tab-link">Tab 1</a></div>
+           <div class="tab-item"><a class="tab-link">Tab 1</a></div>
+           <div class="tab-item"><a class="tab-link">Tab 1</a></div>
+          </div>
+          
+          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</div>
+        </div>
+      </div>
 
     </div>
+
+     </div>
+</section>
 
 </body>
 

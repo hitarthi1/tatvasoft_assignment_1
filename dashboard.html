@@ -17,10 +17,13 @@
                 <Header>
                     <div class="flex-left">
                         <img src="images/images/menu-bar.svg" alt="menu bar">
-                        <img src="images/images/logo.svg" alt="logo" class="logo">
+                        <picture class="picture">
+                            <source media="(max-width:600px)" srcset="images/images/mobile-header-logo.svg" />
+                            <img src="images/images/logo.svg" alt="Logo" class="logo" />
+                          </picture>
                     </div>
                     <div class="flex-right">
-                        <div>
+                        <div class="search_">
                         <img src="images/images/search-icon.svg" class="search">
                         <input type="text" placeholder="Search" class="search-txt">
                         </div>

@@ -237,13 +237,19 @@ body {   background: #FAFAFA
     Header {
       height: 100%;
       width: auto;
-      flex-direction: column;
+        /* flex-direction: column; */
+        background-color: white;
     }
-    
+    .search_{
+      display: none;
+    }
   Header .flex-left {
     height: 100%;
       width: 100%;
       flex-direction: column;
+  }
+  Header .flex-left .picture .logo{
+    width: auto;
   }
   
   Header .flex-right {
@@ -261,43 +267,51 @@ body {   background: #FAFAFA
     display: flex;
     height: 100%;
   } 
-    @media only screen and (max-width: 600px) {
+   
+  @media only screen and (max-width: 600px) {
     .main {
-      
-      flex-direction: column;
+     
+     flex-direction: column;
     }
     .main .side-bar
     {
-      display: flex;
-      align-items: center;
-      /* width: 242px; */
-      width: 100%;
-      background-color: white;
-      flex-direction: column;
-      /* background-color: hotpink; */
-  }
-  .main .side-bar .side-bar-item {
-    margin: auto;
-    width: 30%;
-    justify-content: center;
-  }
-  /* .main .side-bar .side-bar-item {height: auto;
-  width: auto;} */
 
-
+     background-color: white;
+     flex-direction: row; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
     
-   }
-  
-   @media only screen and (min-width: 600px) {
-    .main .side-bar {width: 242px;}
-    .main .side-bar .side-bar-item {width: 183px;}
-   }
+    }
+    .main .side-bar .side-bar-item {
+     height: auto;
+     width: auto;
+     justify-content: center;
+    align-items: center;
+     margin: 10px;
+     padding-left: 18px;
+     padding-right: 18px;
+     
+     }
+     .main .side-bar .side-bar-item .sidebar-item-text{
+       display: none;}
+   
+    } 
+    
+ 
+ 
+  @media only screen and (min-width: 601px) {
+   .main .side-bar {width: 242px; flex-direction: column; display: flex;
+     align-items: center;
+    }
+   .main .side-bar .side-bar-item {width: 183px;}
+  }
 
   .main .side-bar {
     display: flex;
     align-items: center;
     
-    flex-direction: column;
+  
     /* background-color: red; */
   }
   
@@ -413,8 +427,8 @@ body {   background: #FAFAFA
     display: flex;
     border-radius: 5px;
     background-color: #ffffff;
-    /* width: 802px; */
-    height: 400px;
+    max-width: 802px;
+    max-height: 400px;
     padding-left: 30px;
     flex-direction: column;  
       /* margin-left: auto; */
@@ -603,8 +617,7 @@ body {   background: #FAFAFA
   #last-row {
     border-color: #ffffff;
   }
-  
-  /* Inner-Page CSS */
+  /* innerpage */
   .innerpage-container {
     width: 1560px;
     height: 1970px;
@@ -621,7 +634,7 @@ body {   background: #FAFAFA
     border-radius: 5px;
     margin-left: 50px;
     margin-top: 23px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 1218px;
     height: 1749px;
     padding-left: 29px;
@@ -634,37 +647,38 @@ body {   background: #FAFAFA
     flex-direction: column;
     margin-bottom: 44px;
   }
+
   
-  .main-form .col-box .head-text {
-    color: #3E3E3E;
+  .main-form .col-box .col_text {
+    color: #3e3e3e;
     font-size: 22px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 15px;
   }
   
-  .main-form .col-box .control {
+  .main-form .col-box .transform {
     position: relative;
   }
   
-  .main-form .col-box .control .txt-control {
-    border: 1px solid #ADADAD;
+  .main-form .col-box .transform .txt-control {
+    border: 1px solid #adadad;
     border-radius: 4.5px;
     height: 49px;
     width: 100%;
-    color: #3E3E3E;
+    color: #3e3e3e;
     padding-left: 15px;
     transition: transform 1s;
   }
   
-  .main-form .col-box .control .txt-control~label {
-    color: #ADADAD;
+  .main-form .col-box .transform .txt-control ~ label {
+    color: #adadad;
     position: absolute;
     left: 15px;
     top: 13px;
   }
   
-  input:focus~label,
-  input:valid~label {
+
+  .transform input:valid ~ label {
     background-color: #ffffff;
     font-size: 12px;
     padding-left: 5px;
@@ -672,39 +686,39 @@ body {   background: #FAFAFA
     transform: translateX(-7px) translateY(-24px);
   }
   
-  input:focus {
-    outline: 1px solid #C8242F;
+  .transform input:focus {
+    outline: 1px solid #c8242f;
   }
   
-  .main-form .col-box .control .dropdown-control {
-    border: 1px solid #ADADAD;
-    background-color: #FFFFFF;
+  .main-form .col-box .transform .dropdown-control {
+    border: 1px solid #adadad;
+    background-color: #ffffff;
     border-radius: 4.5px;
     height: 49px;
     width: 100%;
-    color: #ADADAD;
+    color: #adadad;
     padding-left: 15px;
   }
   
   .main-form .col-box .multiline-control {
-    border: 1px solid #ADADAD;
+    border: 1px solid #adadad;
     border-radius: 4.5px;
     margin-top: 21px;
     width: 100%;
-    color: #3E3E3E;
+    color: #3e3e3e;
     padding-left: 15px;
     transition: transform 1s;
   }
   
-  .main-form .col-box .control .multiline-control~label {
-    color: #ADADAD;
+  .main-form .col-box .transform .multiline-control ~ label {
+    color: #adadad;
     position: absolute;
     left: 15px;
     top: 34px;
   }
   
-  textarea:focus~label,
-  textarea:valid~label {
+  .transform textarea:focus ~ label,
+  .transform textarea:valid ~ label {
     background-color: #ffffff;
     font-size: 12px;
     padding-left: 5px;
@@ -712,23 +726,23 @@ body {   background: #FAFAFA
     transform: translateX(-7px) translateY(-24px);
   }
   
-  textarea:focus {
-    outline: 1px solid #C8242F;
+  .transform textarea:focus {
+    outline: 1px solid #c8242f;
   }
   
   .main-form .col-box .disable-control {
-    border-color: #ADADAD;
+    border-color: #adadad;
     width: 100%;
     border-radius: 4.5px;
     height: 49px;
-    color: #ADADAD;
+    color: #adadad;
     border-style: dashed;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding-left: 15px;
   }
   
-  .main-form .col-box .control .disable-control~label {
-    color: #ADADAD;
+  .main-form .col-box .transform .disable-control ~ label {
+    color: #adadad;
     position: absolute;
     background-color: #ffffff;
     font-size: 12px;
@@ -740,17 +754,17 @@ body {   background: #FAFAFA
   }
   
   /* validation */
-  .main-form .col-box .control .validate-control {
-    border: 1px solid #FF3C3C;
+  .main-form .col-box .transform .validate-control {
+    border: 1px solid #ff3c3c;
     border-radius: 4.5px;
     height: 47px;
     width: 100%;
-    color: #3E3E3E;
+    color: #3e3e3e;
     padding-left: 15px;
   }
   
-  .main-form .col-box .control .validate-control~label {
-    color: #FF3C3C;
+  .main-form .col-box .transform .validate-control ~ label {
+    color: #ff3c3c;
     position: absolute;
     background-color: #ffffff;
     font-size: 12px;
@@ -761,38 +775,38 @@ body {   background: #FAFAFA
     transform: translateX(-7px) translateY(-20px);
   }
   
-  .main-form .col-box .control .validate-control~span {
-    color: #FF3B3B;
+  .main-form .col-box .transform .validate-control ~ span {
+    color: #ff3b3b;
     font-size: 12px;
     padding-left: 15px;
   }
   
   /* info not validate */
-  .main-form .col-box .control .info-control {
-    border: 1px solid #ADADAD;
+  .main-form .col-box .transform .info-control {
+    border: 1px solid #adadad;
     border-radius: 4.5px;
     height: 47px;
     width: 100%;
-    color: #3E3E3E;
+    color: #3e3e3e;
     padding-left: 15px;
   }
   
-  .main-form .col-box .control .info-control~label {
-    color: #ADADAD;
+  .main-form .col-box .transform .info-control ~ label {
+    color: #adadad;
     position: absolute;
     left: 15px;
     top: 13px;
   }
   
-  .main-form .col-box .control .info-control~span {
-    color: #ADADAD;
+  .main-form .col-box .transform .info-control ~ span {
+    color: #adadad;
     font-size: 12px;
     padding-left: 15px;
   }
   
   /* other elements */
   .main-form .col-box .inner-head-text {
-    color: #3E3E3E;
+    color: #3e3e3e;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -803,21 +817,20 @@ body {   background: #FAFAFA
     position: absolute;
     left: 0;
     top: 0;
-  
   }
   
-  .col-box .control .btn-upload {
+  .col-box .transform .btn-upload {
     border-radius: 18px;
-    border: 1px solid #C8242F;
-    background-color: #FFFFFF;
+    border: 1px solid #c8242f;
+    background-color: #ffffff;
     height: 36px;
     width: 124px;
-    color: #C8242F;
+    color: #c8242f;
   }
   
-  .col-box .control .btn-upload~span {
+  .col-box .transform .btn-upload ~ span {
     font-size: 12px;
-    color: #ADADAD;
+    color: #adadad;
     margin-left: 20px;
   }
   
@@ -825,7 +838,7 @@ body {   background: #FAFAFA
     display: flex;
   }
   
-  input[type='radio'] {
+  input[type="radio"] {
     width: 15px;
     height: 15px;
     accent-color: #c8242f;
@@ -835,86 +848,186 @@ body {   background: #FAFAFA
   .col-box .radiobutton .opt {
     margin-right: 38px;
   }
+  .flex_row{display: flex;
+    gap:30px;
+
+
+  }
+  .flex_col{display: flex;
+  flex-direction: column;
+flex: 1;
+gap: 30px;}
+.flex_col4{display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 30px;
+  /* flex:25% */
+
+}
+.flex_col3{display: flex;
+  flex-direction: column;
+flex: 1;
+gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .flex_row {
+    flex-direction: column;
+    flex-wrap: wrap;}
   
+  .flex_col4{flex-wrap: wrap;}
+}
   .col-box .radiobutton .opt .opt-name {
     padding-left: 10px;
     font-size: 15px;
-    color: #3E3E3E;
+    color: #3e3e3e;
   }
   
-  .col-box .check-box{
+  .col-box .check-box {
     display: flex;
+    
   }
   
-  .col-box .check-box .check{
+  .col-box .check-box .check {
     margin-right: 36px;
   }
   
-  .col-box .check-box .check .check-name{
+  .col-box .check-box .check .check-name {
     padding-left: 10px;
     font-size: 15px;
   }
-  input[type='checkbox']{
+  input[type="checkbox"] {
     height: 16px;
     width: 16px;
     accent-color: #c8242f;
   }
-  
-  .snackbar{
-    height: 44px;
+  .inline_block{
+    /* display: inline-block; */
+  }
+  .snackbar {
+    min-height: 44px;
     border-radius: 4.5px;
-    line-height: 44px;
+    /* line-height: 44px; */
   }
   
-  
-  .snackbar img{
+  .snackbar img {
     height: 27px;
     width: 27px;
     margin-left: 10px;
     margin-right: 5px;
   }
   
-  .error{
-    border: 1px solid #FF3535;
-    color: #FF3535;
+  .error {
+    border: 1px solid #ff3535;
+    color: #ff3535;
   }
   
-  .info{
-    border: 1px solid #00B9E1;
-    color: #00B9E1;
+  .info {
+    border: 1px solid #00b9e1;
+    color: #00b9e1;
   }
   
-  .warning{
-    border: 1px solid #FFA800;
-    color:#FFA800;
+  .warning {
+    border: 1px solid #ffa800;
+    color: #ffa800;
   }
-  .success{
-    border: 1px solid #00AF27;
-    color: #00AF27;
+  .success {
+    border: 1px solid #00af27;
+    color: #00af27;
   }
   
-  .btn-box{
+  .btn-box {
     display: flex;
   }
-  .btn-box .primary{
+  .btn-box .primary {
     width: 124px;
     height: 45px;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
-    background-color: #C8242F;
+    background-color: #c8242f;
     border-radius: 23px;
     margin-right: 20.5px;
+    border: none;
   }
-  .btn-box .secondary{
+  .btn-box .secondary {
     width: 145px;
     height: 44px;
     font-size: 18px;
     line-height: 24px;
-    color: #C8242F;
+    color: #c8242f;
     background-color: #ffffff;
-    border: 1px solid #C8242F;
+    border: 1px solid #c8242f;
     border-radius: 22px;
     margin-right: 20.5px;
   }
+  
+  .tabs {
+   
+    display: flex;
+    border-bottom: 1px solid #adadad;
+    padding-left: 0rem;
+  }
+  
+  .tabs .tab-item {
+    width: 69px;
+    text-align: center;
+  }
+  .tabs .tab-item .tab-link {
+    text-decoration: none;
+    color: #adadad;
+  }
+  .tabs .tab-item .tab-link:hover {
+    color: #c8242f;
+  }
+  .tabs .active {
+    border-bottom: 2px solid #c8242f;
+  }
+  .tabs .active .tab-link {
+    color: #c8242f;
+    font-weight: 600;
+  }
+  
+  .col-box p {
+    color: #3e3e3e;
+    font-size: 15px;
+    width: 1119px;
+  }
+/* my nnerpage.html */
+.analysis{
+  display: flex;
+  background-color: #BABABA;
+  flex-direction: column;
+  padding-right: 50px;
+}
+.analysis .analysis_heading{
+  width: 113px;
+height: 39px;
+text-align: left;
+font-size: 30px;
+margin-left: 48px;
+margin-top: 41px;
+margin-bottom: 23px;
+font-weight: bold;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+.analysis .analysis_div{
+padding: 23px 30px 0px 29px;
+background-color: white;
+margin-left: 48px;
+margin-top: 23px;
+}
+.column_heading{
+  width: 121px;
+  height: 29px;
+  /* UI Properties */
+  text-align: left;
+  /* font-family: ; */
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #3E3E3E;
+  opacity: 1;
 
+}
