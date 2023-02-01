@@ -72,55 +72,54 @@
      <div class="analysis">
     <div class="analysis_heading"> Analysis</div>
     <div class="analysis_div">
-      <!--  -->
-      <div class="main-form">
+      <div class="a_form">
         <!-- One Column -->
-        <div class="col-box">
-          <span class="col_text">One Column</span>
-          <div class="transform"></div>
-            <input class="txt-control" type="text" id="name"  placeholder="Name">
-           
+        <div class="column">
+          <span class= "a_heading">One Column</span>
+          <div class="upper">
+            <input class="a_input" type="text" id="name" required>
+            <label for="name">Name</label>
           </div>
-          <div class="transform">
-            <select class="dropdown-control" style="margin-top: 21px;">
+          <div class="upper">
+            <select class="a_dropdown" style="margin-top: 21px;">
               <option>Dropdown</option>
               <option>1</option>
               <option>2</option>
             </select>
           </div>
-          <div class="transform">
-            <textarea id="multiline" class="multiline-control" rows="4" required></textarea>
+          <div class="upper">
+            <textarea id="multiline" class="a_multiline" rows="4" required></textarea>
             <label for="multiline">Multiple line</label>
           </div>
         </div>
 
         <!-- Two column -->
-        <div class="col-box">
-          <span class="col_text">Two Column</span>
+        <div class="column">
+          <span class= "a_heading">Two Column</span>
           <div class="flex_row"> 
             <div class="flex_col">
-              <div class="transform">
-                <input class="txt-control" type="text" id="Name" required>
-                <label for="Name">Name</label>
+              <div class="upper">
+                <input class="a_input" type="text" id="name" required>
+                <label for="name">Name</label>
               </div>
             </div>
             <div class="flex_col">
-              <div class="transform">
-                <input class="txt-control" type="text" id="Username" required>
-                <label for="Username">Username</label>
+              <div class="upper">
+                <input class="a_input" type="text" id="username" required>
+                <label for="username">Username</label>
               </div>
             </div>
           </div>
           <div class="flex_row" style="margin-top: 21px">
             <div class="flex_col">
-              <div class="transform">
-                <input class="txt-control" type="password" id="Password" required>
-                <label for="Password">Password</label>
+              <div class="upper">
+                <input class="a_input" type="password" id="pass" required>
+                <label for="pass">Password</label>
               </div>
             </div>
             <div class="flex_col">
-              <div class="transform">
-                <select class="dropdown-control">
+              <div class="upper">
+                <select class="a_dropdown">
                   <option>Dropdown</option>
                   <option>1</option>
                   <option>2</option>
@@ -131,24 +130,24 @@
         </div>
 
         <!-- Three Column -->
-        <div class="col-box">
-          <span class="col_text">Three Column</span>
+        <div class="column">
+          <span class= "a_heading">Three Column</span>
           <div class="flex_row">
-            <div class="flex_col3">
-              <div class="transform">
-                <input class="txt-control" type="text" id="Focus" required>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="text" id="focus" required>
                 <label for="focus">Focus</label>
               </div>
             </div>
-            <div class="flex_col3">
-              <div class="transform">
-                <input class="txt-control" type="password" id="Password" required>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="password" id="pass1" required>
                 <label for="pass1">Password</label>
               </div>
             </div>
-            <div class="flex_col3">
-              <div class="transform">
-                <input class="disable-control" type="text" id="Disable" name="disable" value="JohnDoe" disabled>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_disable" type="text" id="disable" name="disable" value="JohnDoe" disabled>
                 <label for="disable">Disabled</label>
               </div>
             </div>
@@ -156,33 +155,33 @@
         </div>
 
         <!-- Four Column -->
-        <div class="col-box">
-          <span class="col_text">Four Column</span>
+        <div class="column">
+          <span class= "a_heading">Four Column</span>
           <div class="flex_row">
-            <div class="flex_col4">
-              <div class="transform">
-                <input class="validate-control" type="text" id="designation" name="designation" value="UI Designer"
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_validate" type="text" id="designation" name="designation" value="UI Designer"
                   required>
                 <label for="designation">Designation</label>
                 <span>Enter Valid data</span>
               </div>
             </div>
-            <div class="flex_col4">
-              <div class="transform">
-                <input class="info-control" type="text" id="name" required>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="outer_text" type="text" id="name" required>
                 <label for="name">Name</label>
                 <span>Enter your full Name as per ID</span>
               </div>
             </div>
-            <div class="flex_col4">
-              <div class="transform">
-                <input class="txt-control" type="text" id="uname" name="uname" required value="JohnDoe">
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="text" id="uname" name="uname" required value="JohnDoe">
                 <label for="uname">Username</label>
               </div>
             </div>
-            <div class="flex_col4">
-              <div class="transform">
-                <select class="dropdown-control">
+            <div class="flex_col">
+              <div class="upper">
+                <select class="a_dropdown">
                   <option>Select</option>
                   <option>1</option>
                   <option>2</option>
@@ -193,78 +192,76 @@
         </div>
 
         <!-- Other Design elements -->
-        <div class="col-box">
-          <div class="col_text" style="margin-bottom: 21px;">
+        <div class="column">
+          <div class= "a_heading" style="margin-bottom: 21px;">
             Other Design Elements
           </div>
-          <div class="inner-head-text">
+          <div class="other_text">
             File Upload
           </div>
-          <div class="transform">
+          <div class="upper">
             <input type="file">
-            <button class="btn-upload"><img src="images/images/cloud-upload-icon.svg" alt="Upload"> <span
+            <button class="upload"><img src="images/images/cloud-upload-icon.svg" > <span
                 class="upload-text">Upload</span></button>
             <span>No item Selected</span>
           </div>
-          <div class="inner-head-text" style="margin-top: 36px; margin-bottom: 10px;">
-
+          <div class="other_text" style="margin-top: 36px; margin-bottom: 10px;">
             Radio Button
           </div>
-          <div class="radiobutton">
-            <div class="opt"><input type="radio" name="option1" id="option1" /><span class="opt-name">Option
+          <div class="radio">
+            <div class="option"><input type="radio" name="option1" id="option1" /><span class="opt1">Option
                 1</span></div>
-            <div class="opt"><input type="radio" name="option1" id="option2" /><span class="opt-name">Option
+            <div class="option"><input type="radio" name="option1" id="option2" /><span class="opt1">Option
                 2</span></div>
           </div>
-          <div class="inner-head-text" style="margin-top: 32px;">Checkbox</div>
-          <div class="check-box">
-            <div class="check"><input type="checkbox" name="check" id="checkbox1" checked disabled /><span
+          <div class="other_text" style="margin-top: 32px;">Checkbox</div>
+          <div class="checkbox">
+            <div class="check"><input type="checkbox" name="check" id="check1" checked disabled /><span
                 class="check-name">Option 1</span></div>
-            <div class="check"><input type="checkbox" name="check" id="checkbox1" /><span class="check-name">Option
-                1</span></div>
+            <div class="check"><input type="checkbox" name="check" id="check2" /><span class="check-name">Option
+                2</span></div>
           </div>
 
-          <div class="inner-head-text" style="margin-top: 35px;">
+          <div class="other_text" style="margin-top: 35px;">
             Snackbar
           </div>
-
           <div class="flex_row">
             <div class="flex_col">
-              <div class="snackbar error" style="display: flex;">
+              <div class="snackbar error" style="display: flex;align-content: stretch;">
                 <img src="images/images/error-icon.svg">
-                This is an error Message
+                 <div> This is an error Message.</div>
               </div>
             </div>
             <div class="flex_col">
-              <div class="snackbar info">
-               <div style="display: flex;"> <img src="images/images/info-icon.svg">
-                <div style="display: inline;">  This is an information message!</div></div>
+              <div class="snackbar info" style="display: flex;align-content: stretch;">
+                <img src="images/images/info-icon.svg" >
+               <div> This is an information message!</div>
               </div>
             </div>
           </div>
           <div class="flex_row" style="margin-top: 25px;">
             <div class="flex_col">
-              <div class="snackbar warning" style="display: flex;">
+              <div class="snackbar warning" style="display: flex;align-content: stretch;">
                 <img src="images/images/warning-icon.svg">
-                  This is a warning message!
+                  <div>This is a warning message!</div>
               </div>
             </div>
             <div class="flex_col">
-              <div class="snackbar success" style="display: flex;">
+              <div class="snackbar success" style="display: flex;align-content: stretch;">
                 <img src="images/images/success-icon.svg">
-                This is a success message!
+               <div> This is a success message!</div>
               </div>
             </div>
           </div>
-          <div class="inner-head-text" style="margin-top: 35px;">
+          <div class="other_text" style="margin-top: 35px;">
             Call to action
           </div>
-          <div class="btn-box">
+          <div class="btn">
             <button class="primary">Primary</button>
             <button class="secondary">Secondary</button>
           </div>
 
-          <div class="inner-head-text" style="margin-top: 35px;">
+          <div class="other_text" style="margin-top: 35px;">
             Tabs
           </div>
           <div 
@@ -274,10 +271,10 @@
            <div class="tab-item"><a class="tab-link">Tab 1</a></div>
            <div class="tab-item"><a class="tab-link">Tab 1</a></div>
           </div>
-          
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</div>
-        </div>
+          <div class="tab_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</div>
+         </div>
       </div>
+     
 
     </div>
 
